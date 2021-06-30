@@ -1,0 +1,122 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 56rem) {
+
+   
+    .headings h1 {
+        font-size: 3rem;
+    }
+
+    #logoImg {
+        width: 135px;
+    }
+    
+    /*
+    nav{
+        display: flex;
+        
+		
+	}
+	
+	nav button {
+		display: none;
+	}
+	
+	nav ul.hide{
+		display: block;
+	}
+	
+	nav ul {
+		margin: 0 auto;
+	}
+	
+	nav ul li {
+		float: left;
+		display: block; /* change state in small view */
+	/*	flex: 1 1 auto;
+	}
+	
+	nav ul li a {
+		border: none;
+		border-right: 1px solid rgba(0,0,0,0.3);
+		padding: .6rem 1rem;
+	}
+	*/
+
+	.m {
+		font-size: 1.2rem;
+	}
+	
+	nav ul li {
+		font-size: 1rem;
+	}
+
+
+
+    footer {
+		max-width: 100%;
+		padding: 50px;
+    }
+
+	.galleryHome {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.galleryImg:hover {
+		box-shadow: 0 0 50px #333;
+	}
+	
+	form label.sbs {
+		padding: .4rem 0;
+	}
+
+/*---home page----*/
+
+	
+.happenings {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.happenings ul {
+	grid-column-start: 1;
+}
+
+
+.cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		max-width: 1290px;
+	} 
+
+	.cards article {
+		display: grid;
+		grid-template-rows: 1fr ;
+		margin: .5rem;
+		padding: 20px;
+	}
+	
+	.cards h2 {
+		font-size: 2rem;
+
+	}
+
+	.cards img {
+		width: 100%;
+		padding: 0;
+
+	}
+
+	.cards div {
+		width: 100%;
+		padding: 1.5rem;
+	
+	}
+
+	.cards p {
+		font-size: 1.1rem;
+		line-height: 2rem;
+	}
+
+
+    } /*end large */

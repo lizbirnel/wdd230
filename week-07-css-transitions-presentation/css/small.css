@@ -1,0 +1,231 @@
+header, footer {
+    background-color:#123C69;
+    max-width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}
+
+h2 {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 0 15px;
+}
+
+h3 {
+    color:white;
+    background-color: #AC3B61;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.red {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width ;
+  }
+  
+  .red:hover {
+    width: 300px;
+  }
+
+ .orange {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    transition: width , height 4s;
+  }
+  
+  .orange:hover {
+    width: 300px;
+    height: 300px;
+  }
+
+  .gold {
+    width: 100px;
+    height: 100px;
+    background: gold;
+    transition: width 2s;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  #div1 {transition-timing-function: linear;}
+  #div2 {transition-timing-function: ease;}
+  #div3 {transition-timing-function: ease-in;}
+  #div4 {transition-timing-function: ease-out;}
+  #div5 {transition-timing-function: ease-in-out;}
+  
+  .gold:hover {
+    width: 300px;
+  }
+
+  .green{
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: width 3s;
+    transition-delay: 1s;
+  }
+  
+  .green:hover {
+    width: 300px;
+  }
+
+  .blue {
+    display: inline-block;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: 0 40px;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .blue1:hover {
+    transform: rotate(90deg);
+  }
+  
+  .blue2:hover {
+    transform: rotate(1000deg);
+  }
+  
+  .blue3:hover {
+    transform: rotate(-100deg);
+  }
+
+  .purple {
+    display: inline-block;
+    background-color: purple;
+    height: 100px;
+    width: 100px;
+    margin: 0 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .purple1:hover {
+    transform: skewX(-10deg);
+  }
+  
+  .purple2:hover {
+    transform: skewY(-20deg);
+  }
+  
+  .purple3:hover {
+    transform: skew(25deg, 10deg);
+  }
+
+  .pink {
+    display: inline-block;
+    background-color: pink;
+    height: 100px;
+    width: 100px;
+    margin: 0 60px;
+    transition: transform 1s ease-out;
+}
+  
+  .pink1:hover {
+    transform: scale(0.5);
+  }
+  
+  .pink2:hover {
+    transform: scale(2);
+  }
+  
+  .pink3:hover {
+    transform: scale(0.5, 2.5);
+  }
+
+  .turquoise {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: turquoise;
+    margin: 0 40px;
+    transition: transform 0.5s linear;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  .turquoise1:hover {
+        transform: translateX(15px);
+    }
+  
+  .turquoise2:hover {
+      transform: translateY(50px);
+    }
+  
+  
+  .turquoise3:hover {
+      transform: translateX(-15px);
+    }
+  
+  .turquoise4:hover {
+      transform: translateY(-30px);
+    }
+  
+  .turquoise5:hover {
+      transform: translate(15px, -40px);
+    }
+
+    .fun {
+        margin-top: 120px;
+        width: 300px;
+        height: 300px;
+        background-image: repeating-linear-gradient(
+          60deg,
+          aqua,
+          limegreen 10px,
+          coral 30px,
+          yellow 50px
+        );
+        transition: all 2s ease-in-out;
+      }
+            
+      .fun:hover {
+        background-image: linear-gradient(
+           10deg, 
+           red,
+           blue, 
+           white);
+        margin-left: 500px;
+        transform: rotate(-700deg) skew(15deg) scale(0.7);
+      }
+
+p{
+    text-align: left;
+    margin: 25px;
+}
+
+div {
+    max-width: 75%;
+    background-color: #F0EEF0;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}

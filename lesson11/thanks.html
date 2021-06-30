@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Storm Center Page</title>
+    <meta name="description" content="Storm Center Page Assignment for Elizabeth Birnel in WDD-230: Web Frontend Development at Brigham Young University-Idaho">
+    <link rel="shortcut icon" href="images/favicon02.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/normalize.css">  
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+    
+</head>
+<body onload="windChill()">
+    <div id="pancake">
+        <p><b>Saturday = Preston Pancakes in the Park!</b> 9:00 a.m. Saturday at the city park pavilion.</p> 
+    </div>
+    
+    <header>
+            
+        <img id="logoImg" src="images/logo.png" alt="Cloudy With a Chance Logo">
+        <section class="headings">
+            <h1>Cloudy With a Chance</h1>
+            <div class="m">Rain, snow, shine or meatballs...everything you need to know!</div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>  
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li> 
+        </ul>
+    </nav>   
+    
+   <main>
+        <h2>Thank You</h2>
+        <p> Thank you for reporting storm conditions in your area.</p>
+    
+    </main>
+    <footer class="footer">
+        <div>
+            <p>
+              &copy; Cloudy With a Chance | <a href="https://openweathermap.org/" target="blank">Open Weather API</a> | <a href="https://lizbirnel.github.io/">Elizabeth Birnel</a><br>
+              <span id="currentDate"></span>
+            
+          </div>
+      </footer>
+      <script src="js/windchill.js"></script>
+      <script src="js/pancake-banner.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/five-day-forecast.js"></script>
+      <script src="js/date.js"></script>
+      <script src="js/webfontload.js"></script>
+      <script src="js/adjust-rating.js"></script>
+      
+
+      
+</body>
+
+</html>

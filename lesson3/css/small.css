@@ -1,0 +1,116 @@
+
+body {
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    margin: 0 auto;
+}
+
+nav, footer {
+    background: navy; /* Old browsers */
+		background: -moz-linear-gradient(top, #457B9D 0%, navy 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #457B9D 0%,navy 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #457B9D 0%, navy 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+}
+
+nav {
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color:#FEFCEB;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+nav a:hover {
+	background-color: #bbb;
+	color: #36454f;
+}
+
+#logoImg {
+    max-width: 75%;
+}
+
+.colorPalette {
+    max-width: 50%;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: #457B9D;
+    
+  }
+  .secondary {
+    background-color: #767378;
+  }
+  .accent1 {
+    background-color: #ffd97d;
+  }
+  .accent2{
+    background-color: #fefceb;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+      font-family: Lato, Arial, sans-serif;
+      color: navy;
+    }
+
+
+  h1 {
+      color:navy;
+      text-align: center;
+  }
+
+
+  body {
+      font-family: Merriweather, Times, serif;
+      font-size: 16px;
+      color: #22221C;
+  }
+
+  main {
+    padding: .75rem;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+  footer {
+    max-width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:visited {
+  color: #FFD97D;
+}

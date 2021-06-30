@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cloudy With a Chance Home Page</title>
+    <meta name="description" content="Cloudy With a Chance Home Page Assignment for Elizabeth Birnel in WDD-230: Web Frontend Development at Brigham Young University-Idaho">
+    <link rel="shortcut icon" href="images/favicon02.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/normalize.css">  
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+    
+</head>
+<body>
+    <div id="pancake">
+        <h3>Saturday = Preston Pancakes in the Park!</h3>
+        <p>9:00 a.m. Saturday at the city park pavilion.</p> 
+    </div>
+    
+    <header>
+            
+        <img id="logoImg" src="images/logo.png" alt="Cloudy With a Chance Logo">
+        <section class="headings">
+            <h1>Cloudy With a Chance</h1>
+            <div class="m">Rain, snow, shine or meatballs...everything you need to know!</div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston-9.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>  
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li> 
+        </ul>
+    </nav>   
+    
+   <main>
+        
+        <div class="herodiv">
+            <figure  class="heroPic">
+                <img id="heroImg" src="images/homeheroimgoriginal.jpg" alt="umbrellas" sizes="100vw"
+                srcset="images/homeheroimgsmall500.jpg 500w,
+                        images/homeheroimgmedium800.jpg 800w,
+                        images/homeheroimglarge1100.jpg 1100w"
+                 >
+            </figure>
+        </div>
+        <h2>Cloudy With a Chance</h2>
+
+
+        <div class="happenings">
+            <div class="happeningsImg">           
+                <img id="happeningsImg"  src="images/ferriswheel.jpg" alt="ferris wheel">
+            </div>
+            <section>
+                
+                <h3>Idaho Happenings</h3>
+                <ul>
+                    <li>Preston City Carnival: March 12-14, 2021</li>
+                    <li>Fish Haven Fireman's Breakfast: March 20, 2021</li>
+                    <li>Fish Haven City Parade/Carnival: March 19-21, 2021</li>
+                    <li>Soda Springs City Council Meeting: March 24, 2021</li>
+                    <li>Preston City City Council Meeting: March 27, 2021</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="cards"></div>
+
+       
+
+        <div class="contact">
+            <img id="mapImg" src="images/map.JPG" alt="Idaho region map">
+            <section class="contactInfo">
+                <h4>Cloudy With a Chance</h4>
+                <p><i class="material-icons">place</i> 30 N 1st E<br>Preston, ID 83263</p><br>
+                <p>&phone; 999-999-9999<br>&#9993; contact@cloudywithachance.com
+                </p><br>
+                <img class="socialIcon" src="images/facebook.png" alt="facebook">
+                <img class="socialIcon" src="images/pinterest.png" alt="pinterest">
+                <img class="socialIcon" src="images/twitter.png" alt="twitter">
+                <img class="socialIcon" src="images/whatsapp.png" alt="whatsapp">
+            </section>
+       </div>
+
+      
+       
+    </main>
+    <footer class="footer">
+        <div>
+          <p>
+            &copy; Cloudy With a Chance | Attributions | Elizabeth Birnel<br>
+            <span id="currentDate"></span>
+          
+        </div>
+      </footer>
+      <script src="js/pancake-banner.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/date.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="js/webfontload.js"></script>
+      <script src="js/towndata.js"></script> 
+
+      
+</body>
+
+</html>

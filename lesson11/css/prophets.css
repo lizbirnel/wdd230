@@ -1,0 +1,72 @@
+h1 {
+    text-align: center;
+    color: #5b2b7c;
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+}
+
+.cards {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: .8rem;
+    background-color: #dbdada;
+    padding: 15px;
+    filter: drop-shadow(0 0 15px #333);
+    max-width: 1290px;
+    margin: 30px auto;
+    
+}
+
+.cards section {
+    border:  1px solid #5b2b7c;
+    margin: 5px;
+    background-color: #B9B9CC;
+    padding: 20px;
+}
+
+.cards h2 {
+    color:#5b2b7c; 
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+}
+
+.cards img {
+    box-shadow: 10px 10px 10px gray;
+    max-width: 50%;
+}
+
+.cards p {
+    line-height: .6rem;
+}
+
+footer {
+    text-align: center;
+}
+
+/* 35em is also 560px when basefont is 16px */
+
+@media only screen and (min-width: 35rem) {
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+}
+
+/* end medium */
+
+
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 56rem) {
+ .cards {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+
+ }
+
+}
+
+/* end large */

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gallery Page</title>
+    <meta name="description" content="Gallery Page Assignment for Elizabeth Birnel in WDD-230: Web Frontend Development at Brigham Young University-Idaho">
+    <link rel="shortcut icon" href="images/favicon02.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/normalize.css">  
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+    
+</head>
+<body>
+    <div id="pancake">
+        <p><b>Saturday = Preston Pancakes in the Park!</b> 9:00 a.m. Saturday at the city park pavilion.</p> 
+    </div>
+    
+    <header>
+            
+        <img id="logoImg" src="images/logo.png" alt="Cloudy With a Chance Logo">
+        <section class="headings">
+            <h1>Cloudy With a Chance</h1>
+            <div class="m">Rain, snow, shine or meatballs...everything you need to know!</div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>  
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li> 
+        </ul>
+    </nav>   
+    
+    
+    <h2>Weather Gallery</h2>
+   <main >
+    
+       <div class="galleryHome">
+        <div class="galleryImg">
+            <picture>
+                <img src="images/placeholder.png" data-src="images/blue-jacket.jpg" alt="Nature image">
+            </picture>
+            <p>Looking out over the reservoir.</p>    
+        </div>
+        <div class="galleryImg">    
+            <picture>
+                <img src="images/placeholder.png" data-src="images/fall-aerial.jpg" alt="Fall Aerial view">
+            </picture>
+            <p>Aerial view of the trees during autumn.</p>
+        </div>
+        <div class="galleryImg">
+            <picture>
+                <img src="images/placeholder.png" data-src="images/fall-leaves.jpg" alt="Fall leaves">
+            </picture>
+            <p>Beautiful yellow fall leaves.</p>
+        </div>    
+        <div class="galleryImg">   
+            <picture>
+                <img src="images/placeholder.png" data-src="images/mountain.jpg" alt="mountain">
+            </picture>
+            <p>Mountain peak and spring wildflowers.</p>
+        </div>
+        <div class="galleryImg">
+            <picture>
+                <img src="images/placeholder.png" data-src="images/mtn-lake.jpg" alt="mountain lake">
+            </picture>
+            <p>A lake in the mountains in early summer.</p>
+        </div>
+        <div class="galleryImg">
+            <picture>
+                <img src="images/placeholder.png" data-src="images/parade.jpg" alt="parade">
+            </picture>
+            <p>Families gather for the Independence Day Parade.</p>
+        </div>    
+        <div class="galleryImg"> 
+            <picture>
+                <img src="images/placeholder.png" data-src="images/snow-road.jpg" alt="snowy road">
+            </picture>
+            <p>Snowy road through the mountains in winter.</p>
+        </div>    
+        <div class="galleryImg">    
+            <picture>
+                <img src="images/placeholder.png" data-src="images/snowy-sky.jpg" alt="snowy night sky">
+            </picture>
+            <p>Snowy mountain peak and beautiful starry night sky.</p>
+        </div>
+        <div class="galleryImg">
+            <picture>
+                <img src="images/placeholder.png" data-src="images/sun-daisy.jpg" alt="sun and daisies">
+            </picture>
+            <p>Summer sun and dancing daisies.</p>        
+        </div>        
+    </div>
+       
+    </main>
+    <footer class="footer">
+        <div>
+            <p>
+              &copy; Cloudy With a Chance | <a href="https://openweathermap.org/" target="blank">Open Weather API</a> | <a href="https://lizbirnel.github.io/">Elizabeth Birnel</a><br>
+              <span id="currentDate"></span>
+            
+          </div>
+      </footer>
+      <script src="js/pancake-banner.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/date.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="js/webfontload.js"></script>
+      <script src="js/imagehandling.js"></script> 
+      
+
+      
+</body>
+
+</html>

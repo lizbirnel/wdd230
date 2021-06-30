@@ -1,0 +1,373 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+	background-color:  white;
+	font-family: Merriweather, serif;
+}
+
+header {
+	background-color: #C4F0FF;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#pancake {
+	display: none;
+	max-width: 100%;
+	text-align: center;
+	padding: 20px;
+	background-color:#FFD97D ;
+}
+
+#pancake.display {
+	display: block;
+}
+
+#logoImg {
+	width: 100px;
+	padding: 5px;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-family: Lato, sans-serif;
+	color: navy;
+	margin: 0 0 0 17px;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.m {
+	grid-column-start: 2;
+	font-style: italic;
+	font-size: 1em;
+	font-weight: bold;
+	color: navy;
+	text-align: center;
+}
+
+nav button {
+	margin: .2rem 2%;
+	background-color: transparent;
+	border: none;
+	font-size: 1.6rem;
+	color: #fff;
+}
+
+nav, footer {
+	background: navy; /* Old browsers */
+		background: -moz-linear-gradient(top, #457B9D 0%, navy 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #457B9D 0%,navy 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #457B9D 0%, navy 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+	font-family: Verdana, sans-serif; 
+	/*margin: 0 auto;*/
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 100%;
+	height: fit-content;
+	/*max-width: 100%;*/
+	padding: 10px;
+
+}
+
+nav {
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+		 
+}
+
+
+nav ul li a {
+	display: block;
+	padding: .8rem 2%;
+	text-decoration: none;
+	color: rgba(255,255,255,0.8);
+	border-top: 1px solid rgba(0,0,0,0.3);
+	text-align: center;
+	font-weight: 700;
+}
+
+
+nav ul li.active a{
+	background-color: rgba(0,0,0,0.25); 
+	color: #fff;
+	
+}
+
+nav ul li a:hover {
+	/*background-color: rgba(0,0,0,0.4);*/
+	background-color: #FFD97D;
+	color: navy;
+}
+
+nav ul.hide {
+	display: none;
+}
+
+h2 {
+	font-family: Lato, sans-serif;
+	color: navy;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	}
+
+  main {
+    max-width:1200px;
+    margin: auto;
+  }
+
+/*main {
+	max-width: 760px;
+	margin: auto;
+}*/
+
+.herodiv {margin: 10px auto;position: relative;}
+h1, h2, p {margin: 0;}
+
+.heroPic {
+	display:block; margin-left:auto; margin-right:auto; box-sizing:border-box; width:100%;
+    padding:1rem;
+}
+
+#heroImg {
+	max-width: 100%;
+	
+}
+
+.weatherSumm {
+	display: block;
+}
+
+.stats {
+	
+	background: navy; /* Old browsers */
+		background: -moz-linear-gradient(top, #457B9D 0%, navy 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #457B9D 0%,navy 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #457B9D 0%, navy 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+	/*background: radial-gradient(#eee, #4567aa);*/
+	border: 1px solid #000;
+	text-align: center;
+	margin: auto;
+	padding: 1rem;
+	box-shadow: 0 0 30px #111;
+	opacity: .8;
+	display: block;
+}
+
+
+
+.weatherSumm .stats h3 {
+	color: #ffffff;
+	font-family: Lato, sans-serif;
+	font-size: 1.5rem;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+}
+
+
+.stats p {
+	color: white;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+	text-align: left;
+	margin: 0 20px;
+}
+
+
+.highTemp {
+	display: none;
+}
+
+.highTemp h3 {
+	color: #ffffff;
+	text-align: center;
+}
+
+table {
+	width: 75%;
+	margin: 0 auto;
+	border-collapse: collapse;
+	padding: 1.5rem;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+td {color: #ffffff;}
+
+tr:nth-child(odd) {
+	background-color: #ffffff;
+  } 
+
+.article {
+	position: relative;
+	margin: 30px 0px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: rgb(228, 226, 226);
+}  
+
+#articleImg {
+	max-width: 90%;
+	margin: 20px;
+	box-shadow: 0 0 30px #111;
+}
+
+
+/*.galleryHome {
+  display:grid;
+  grid-template-columns: 1fr;
+}
+
+.galleryHome p{ 
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom:1rem;
+}
+
+.galleryImg {
+  display: block;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+}*/
+
+.contact {
+	display: flex;
+	background-color:#C4F0FF;
+	padding: 1em;
+}
+
+.contactInfo {
+	margin: 0 auto;
+}
+
+#mapImg {
+	display: none;
+}
+
+.socialIcon {
+	width: 35px;
+}
+
+.contentbox {
+	display: block;
+	margin: 10px auto;
+	border: 1px dashed #555;
+	padding: 15px;
+	background-color: #eee;
+	color: #444;
+	font-style: italic;
+}
+
+footer, footer a {
+	color: white;
+	text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+}
+.navigation a:hover {
+	color: white;
+	background-color: black;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+/* Media Query for medium+ views */
+
+.galleryHome {
+	margin: 10px auto;
+	/*position: relative;*/
+	display: grid;
+	grid-template-columns: 1fr;
+  }
+  
+  .galleryImg img {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+	}
+  
+  /*.galleryImg picture {
+	padding: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+  }*/
+  
+  .galleryImg p {
+	padding: 0 1rem 1rem 1rem;
+  }
+  
+ /* div img{
+    display:block; margin-left:auto; margin-right:auto; box-sizing:border-box; width:100%;
+    padding:1rem;
+}*/

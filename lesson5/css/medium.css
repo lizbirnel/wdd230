@@ -1,0 +1,85 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+	
+	#logoImg {
+        width: 128px;
+    }
+	
+	.headings h1 {
+        font-size: 2.5rem;
+	}
+	
+	nav{
+        display: flex;
+        
+		
+	}
+	
+	nav button {
+		display: none;
+	}
+	
+	nav ul.hide{
+		display: block;
+	}
+	
+	nav ul {
+		margin: 0 auto;
+	}
+	
+	nav ul li {
+		float: left;
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+		font-size: .8rem;
+	}
+	
+	nav ul li a {
+		border: none;
+		border-right: 1px solid rgba(0,0,0,0.3);
+		padding: .6rem 1rem;
+	}
+
+
+
+	
+
+	.stats {
+		position: absolute;
+	top: 25px;
+	left: 25px;
+	}
+
+	.highTemp {
+		display: block;
+		background: navy; /* Old browsers */
+			background: -moz-linear-gradient(top, #457B9D 0%, navy 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #457B9D 0%,navy 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #457B9D 0%, navy 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+			padding: 1rem;
+	}
+	
+	.highTemp h3 {
+		color: #ffffff;
+		text-align: center;
+	}
+
+
+	#articleImg {
+		max-width: 40%;
+		float: right;
+		top: 5px;
+		right: 15px;
+	}
+ 
+#mapImg {
+	display: block;
+	border: 1px solid black;
+	max-width: 50%;
+	margin: 15px;
+}
+
+	} /*end medium */
+	
+	

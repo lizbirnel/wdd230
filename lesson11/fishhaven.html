@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Fish Haven Town Page</title>
+    <meta
+      name="description"
+      content="Fish Haven Town Page Assignment for Elizabeth Birnel in WDD-230: Web Frontend Development at Brigham Young University-Idaho"
+    />
+    <link rel="shortcut icon" href="images/favicon02.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <div id="pancake">
+      <p>
+        <b>Saturday = Preston Pancakes in the Park!</b> 9:00 a.m. Saturday at
+        the city park pavilion.
+      </p>
+    </div>
+
+    <header>
+      <img id="logoImg" src="images/logo.png" alt="Cloudy With a Chance Logo" />
+      <section class="headings">
+        <h1>Cloudy With a Chance</h1>
+        <div class="m">
+          Rain, snow, shine or meatballs...everything you need to know!
+        </div>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Fish Haven Idaho</h2>
+      <div class="herodiv">
+        <figure class="heroPic">
+          <img
+            id="heroImg"
+            src="images/fishhavenheroimgoriginal.jpg"
+            alt="mountain lake scene"
+            sizes="100vw"
+            srcset="
+              images/fishhavenheroimgsmall500.jpg   500w,
+              images/fishhavenheroimgmedium800.jpg  800w,
+              images/fishhavenheroimglarge1100.jpg 1100w
+            "
+          />
+        </figure>
+        <div class="weatherSumm">
+          <section class="stats">
+            <h3>Weather Summary</h3>
+            <p>
+              Currently: <span id="currently"></span>&nbsp;<span
+                id="currentTemp"
+              ></span
+              >&#176;F
+            </p>
+            <p>High: <span id="high">32</span>&#176;F</p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="windSpeed"></span>&nbsp;mph</p>
+          </section>
+        </div>
+      </div>
+
+      <div class="highTemp">
+        <h3>Five Day Forecast</h3>
+        <table id="fiveDay">
+          <tr>
+            <th id="day1"></th>
+            <th id="day2"></th>
+            <th id="day3"></th>
+            <th id="day4"></th>
+            <th id="day5"></th>
+          </tr>
+          <tr>
+            <td>
+              <span id="imgDay1"></span><br /><span id="temp1"></span>&deg;F
+            </td>
+            <td>
+              <span id="imgDay2"></span><br /><span id="temp2"></span>&deg;F
+            </td>
+            <td>
+              <span id="imgDay3"></span><br /><span id="temp3"></span>&deg;F
+            </td>
+            <td>
+              <span id="imgDay4"></span><br /><span id="temp4"></span>&deg;F
+            </td>
+            <td>
+              <span id="imgDay5"></span><br /><span id="temp5"></span>&deg;F
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="events">
+        <section class="fishHavenEvent"></section>
+      </div>
+
+      <div class="article">
+        <img
+          id="articleImg"
+          src="images/fishhaven-article-img.jpg"
+          alt="squirrel biting hand"
+        />
+        <section>
+          <h3>Fish Story</h3>
+          <h4>by John Doe</h4>
+          <p>
+            I caught a fish and it was THIIIIIIS BIG! Well, actually, I didn't
+            catch the fish. But longtime Fish Haven resident Dan Smith had a
+            huge turn of luck at the Fish Haven Bear Lake $50k Trout Derby held
+            this spring. This local event is a long-standing tradition for Fish
+            Haven residents and visitors from all around who come together once
+            a year to participate. Smith's angling skill and patience paid off
+            mid-morning when he reeled in the grand prize tagged trout worth
+            $10k! Size of fish aside, now he truly has the biggest fish story of
+            them all! Other tagged trout were caught in the smaller amounts
+            valued at anywhere from $100 to $1000. Be sure to join us next year
+            for this fun-filled community event!
+          </p>
+          
+        </section>
+      </div>
+
+      <div class="contact">
+        <img id="mapImg" src="images/map1.jpg" alt="Idaho region map" />
+        <section class="contactInfo">
+          <h4>Cloudy With a Chance</h4>
+          <p>
+            <i class="material-icons">place</i> 30 N 1st E<br />Preston, ID
+            83263
+          </p>
+          <br />
+          <p>&phone; 999-999-9999<br />&#9993; contact@cloudywithachance.com</p>
+          <br />
+          <img class="socialIcon" src="images/facebook.png" alt="facebook" />
+          <img class="socialIcon" src="images/pinterest.png" alt="pinterest" />
+          <img class="socialIcon" src="images/twitter.png" alt="twitter" />
+          <img class="socialIcon" src="images/whatsapp.png" alt="whatsapp" />
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div>
+        <p>
+          &copy; Cloudy With a Chance |
+          <a href="https://openweathermap.org/" target="blank"
+            >Open Weather API</a
+          >
+          | <a href="https://lizbirnel.github.io/">Elizabeth Birnel</a><br />
+          <span id="currentDate"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="js/windchill.js"></script>
+    <script src="js/pancake-banner.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/five-day-forecast.js"></script>
+    <script src="js/date.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/fish-haven-weather-api.js"></script>
+    <script src="js/fish-haven-event.js"></script>
+  </body>
+</html>

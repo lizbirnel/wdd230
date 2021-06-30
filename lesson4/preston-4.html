@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Preston Town Page</title>
+    <meta name="description" content="Preston Town Page Assignment for Elizabeth Birnel in WDD-230: Web Frontend Development at Brigham Young University-Idaho">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">  
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+    
+</head>
+<body>
+    <header>
+        <img id="logoImg" src="images/logo.png" alt="Cloudy With a Chance Logo">
+        <section class="headings">
+            <h1>Cloudy With a Chance</h1>
+            <div class="m">Rain, snow, shine or meatballs...everything you need to know!</div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>  
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li> 
+        </ul>
+    </nav>   
+    
+   <main>
+        <h2>Preston Idaho</h2>
+        <div class="contentbox">Hero with weather summary</div>
+        <div class="contentbox">5 day forecast</div>
+        <div class="contentbox">Article</div>
+        <div class="contentbox">Contact Information</div>
+    </main>
+    <footer class="footer">
+        <div>
+          <p>
+            &copy; Cloudy With a Chance | Attributions | Elizabeth Birnel<br>
+            <span id="currentDate"></span>
+          
+        </div>
+      </footer>
+      <script src="js/main.js"></script>
+</body>
+
+</html>

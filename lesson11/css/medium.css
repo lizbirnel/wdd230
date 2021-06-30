@@ -1,0 +1,143 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+	
+	#logoImg {
+        width: 128px;
+    }
+	
+	.headings h1 {
+        font-size: 2.5rem;
+	}
+	
+	nav{
+        display: flex;
+        
+		
+	}
+	
+	nav button {
+		display: none;
+	}
+	
+	nav ul.hide{
+		display: block;
+	}
+	
+	nav ul {
+		margin: 0 auto;
+	}
+	
+	nav ul li {
+		float: left;
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+		font-size: .8rem;
+	}
+	
+	nav ul li a {
+		border: none;
+		border-right: 1px solid rgba(0,0,0,0.3);
+		padding: .6rem 1rem;
+	}
+
+
+
+	
+
+	.stats {
+		display: inline;
+		position: absolute;
+		top: 40px;
+		left: 40px;
+}
+
+	.highTemp {
+		display: block;
+		background-color: #1E4F89;
+		
+		/*background: navy; /* Old browsers */
+		/*background: -moz-linear-gradient(top, #457B9D 0%, navy 100%); /* FF3.6-15 */
+		/*background: -webkit-linear-gradient(top,  #457B9D 0%,navy 100%); /* Chrome10-25,Safari5.1-6 */
+		/*background: linear-gradient(to bottom,  #457B9D 0%, navy 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+		padding: 1rem;
+	}
+	
+	.highTemp h3 {
+		color: #ffffff;
+		text-align: center;
+	}
+
+
+	#articleImg {
+		max-width: 40%;
+		float: right;
+		top: 5px;
+		right: 15px;
+	}
+ 
+#mapImg {
+	display: block;
+	border: 1px solid black;
+	max-width: 50%;
+	margin: 15px;
+}
+
+.galleryHome {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  }
+  
+/*----Home Page----*/
+
+
+
+
+.cards {
+    display: flex;
+	flex-wrap: wrap;
+    max-width: 650px;
+	margin: auto;
+}
+
+.cards article {
+	display: flex;
+	flex-direction: row;
+	padding: 1rem;
+}
+
+article:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+/*.cards h2 {
+    color:navy; 
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+	margin-bottom: -35px;
+}*/
+
+.cards h3 {
+	font-family: 'Merriweather', serif;
+	font-size: .75rem;
+	
+}
+
+.cards img {
+    width: 50%;
+}
+
+.cards div {
+	width: 50%;
+	
+}
+
+.cards p {
+    line-height: 1.5rem;
+}
+
+  
+
+	} /*end medium */
+	
+	

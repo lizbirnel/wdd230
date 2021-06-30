@@ -1,0 +1,234 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+nav{
+    display: flex;
+    
+    
+}
+
+nav button {
+    display: none;
+}
+
+nav ul.hide{
+    display: block;
+}
+
+nav ul {
+    margin: 0 auto;
+}
+
+nav ul li {
+    float: left;
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+    font-size: .8rem;
+}
+
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    padding: .6rem 1rem;
+}
+
+
+.member {
+    display: inline;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+
+/*-------Local Business Info------*/
+
+.business {
+    display: flex;
+	flex-wrap: wrap;
+    max-width: 650px;
+	margin: auto;
+}
+
+.business article {
+	display: flex;
+	flex-direction: row;
+	padding: 1rem;
+}
+
+article:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+/*.business h2 {
+    color:navy; 
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+	margin-bottom: -35px;
+}*/
+
+.business h3 {
+	font-family: 'Merriweather', serif;
+	font-size: .75rem;
+	
+}
+
+.business img {
+    width: 50%;
+}
+
+.business div {
+	width: 50%;
+	
+}
+
+.business p {
+    line-height: 1.5rem;
+}
+
+/*---Weather---*/
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #215353;
+    color: #FEFCFD;
+    padding: 10px 25px;
+}
+
+.weather h3 {
+    text-align: center;
+}
+.weather p {
+    line-height: 10px;
+}
+
+table {
+	width: 75%;
+	margin: 20px auto;
+	border-collapse: collapse;
+	padding: 1rem;
+}
+
+td, th {
+	/*border: 1px solid #dddddd;*/
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+	text-align: center;
+  }
+  
+td {color: #FEFCFD;}
+
+
+/*tr:nth-child(odd) {
+	background-color: #ffffff;
+  }*/ 
+
+/*------City Page-------*/
+
+.city {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 0px;
+    background-color: #e7e7e7;
+}
+
+.demographics {
+    background-color: #215353;
+    margin: 20px;
+    color: #FEFCFD;
+    padding: 20px 10px;
+}
+
+#eventsImg {
+    max-width: 25%;
+    float: left;
+    top: 5px;
+    right: 15px;
+}
+
+/*----------Join Page-----------*/
+
+#articleImg {
+    max-width: 40%;
+    float: right;
+    top: 5px;
+    right: 15px;
+}
+
+/*--------Directory Page---------*/
+
+
+.cards {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    /*width: 650px;*/
+	margin: auto;
+}
+
+.cards article {
+	display: grid;
+	grid-template-rows: 1fr ;
+	margin: .5rem;
+	padding: 20px;
+}
+
+/*article:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+.cards h2 {
+    color:navy; 
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+	margin-bottom: -35px;
+}*/
+
+.cards h3 {
+	font-family: 'Playfair Display', serif;
+	font-size: .75rem;
+	
+}
+
+.cards img {
+    width: 100px;
+}
+
+.cards div {
+	width: 50%;
+    margin: 0 auto;
+	
+}
+
+.buttons {
+    display: block;
+    margin: 0 0 0 1.5rem;
+}
+
+.buttons button {
+	background-color: #b7b7b7;
+	padding: 5px 15px;
+    
+}
+
+.cards p {
+    line-height: 1.5rem;
+}
+
+
+/*------Contact Page----------*/
+
+.map {
+    display: block;
+    margin: 0 auto;
+}
+
+.boardImages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+} /*end medium */

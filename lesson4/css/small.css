@@ -1,0 +1,178 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+	background-color:  white;
+	font-family: Merriweather, serif;
+}
+
+header {
+	background-color: #C4F0FF;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#logoImg {
+	width: 100px;
+	padding: 5px;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-family: Lato, sans-serif;
+	color: navy;
+	margin: 0 0 0 17px;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.m {
+	grid-column-start: 2;
+	font-style: italic;
+	font-size: 1em;
+	font-weight: bold;
+	color: navy;
+	text-align: center;
+}
+
+nav button {
+	margin: .2rem 2%;
+	background-color: transparent;
+	border: none;
+	font-size: 1.6rem;
+	color: #fff;
+}
+
+nav, footer {
+	background: navy; /* Old browsers */
+		background: -moz-linear-gradient(top, #457B9D 0%, navy 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #457B9D 0%,navy 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #457B9D 0%, navy 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+	font-family: Verdana, sans-serif; 
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 10px;
+
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+		 
+}
+
+nav ul li a {
+	display: block;
+	padding: .8rem 2%;
+	text-decoration: none;
+	color: rgba(255,255,255,0.8);
+	border-top: 1px solid rgba(0,0,0,0.3);
+	text-align: left;
+	font-weight: 700;
+}
+
+
+nav ul li.active a{
+	background-color: rgba(0,0,0,0.2); 
+	color: #fff;
+	
+}
+
+nav ul li a:hover {
+	background-color: rgba(0,0,0,0.4);
+}
+
+nav ul.hide {
+	display: none;
+}
+
+h2 {
+	font-family: Lato, sans-serif;
+	color: navy;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	}
+main {
+	max-width: 760px;
+	margin: auto;
+}
+
+
+.contentbox {
+	display: block;
+	margin: 10px auto;
+	border: 1px dashed #555;
+	padding: 15px;
+	background-color: #eee;
+	color: #444;
+	font-style: italic;
+}
+
+footer, footer a {
+	color: white;
+	text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+.navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+}
+.navigation a:hover {
+	color: white;
+	background-color: black;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+/* Media Query for medium+ views */

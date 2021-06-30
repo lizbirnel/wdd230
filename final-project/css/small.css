@@ -1,0 +1,666 @@
+body {
+    background-color: #F3F3F3;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    font-family: Raleway, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Playfair Display;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+
+
+/*-------------Header------------------*/
+
+header {
+    background-color: #3B7C69;
+}
+
+#logoImg {
+	width: 100px;
+	padding: 5px;
+    margin: 0 auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-family: Playfair Display, serif;
+	color: #FEFCFD;
+	margin: 0 0 0 17px;
+	font-size: 2rem;
+	text-align: center;
+    padding-bottom: 20px;
+}
+
+.m {
+	grid-column-start: 2;
+	font-style: italic;
+	font-size: 1em;
+	font-weight: bold;
+	color: #1E4F89;
+	text-align: center;
+}
+
+nav button {
+	margin: .2rem 2%;
+	background-color: transparent;
+	border: none;
+	font-size: 1.6rem;
+	color: #fff;
+}
+
+nav {
+	text-align: center;
+	margin-bottom: 0px;
+    background-color: #3B7C69;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+		 
+}
+
+
+nav ul li a {
+	display: block;
+	padding: .8rem 2%;
+	text-decoration: none;
+	/*color: rgba(255,255,255,0.8);*/
+    color: #FEFCFD;
+	border-top: 1px solid rgba(0,0,0,0.3);
+	text-align: center;
+	font-weight: 700;
+}
+
+
+nav ul li.active a{
+	background-color: rgba(0,0,0,0.25); 
+	color: #FEFCFD;
+	
+}
+
+nav ul li a:hover {
+	/*background-color: rgba(0,0,0,0.4);*/
+	background-color: #96a74e;
+	color: #215353;
+}
+
+nav ul.hide {
+	display: none;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .navigation {
+      list-style: none;
+      text-align: center;
+      padding: 20px;
+  }
+  
+  .navigation li:first-child {
+      display: block;
+  }
+  .navigation li {
+      display: none;
+  }
+  .navigation a {
+      display: block;
+      padding: 0.75rem;
+      text-align: left;
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+  }
+  .navigation a:hover {
+      color: white;
+      background-color: black;
+  }
+  
+  /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+    <ul class="navigation responsive">
+  */
+  .responsive li {
+      display: block;
+  }
+  
+.herodiv img {
+    width: 100%;
+}
+
+.herodiv {margin: 10px auto;position: relative;}
+
+.heroPic {
+	display:block; margin-left:auto; margin-right:auto; box-sizing:border-box; width:100%;
+}
+
+#heroImg {
+	max-width: 100%;
+	
+}
+
+.becomeMember {
+	display: block;
+}
+
+.member {
+	
+	background-color: #242424; 
+	border: 1px solid #000;
+    color: #FEFCFD;
+	text-align: center;
+	margin: auto;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #111;
+	opacity: .8;
+	display: block;
+}
+
+.member a {
+    background-color: #96a74e;
+    box-shadow: 2px 2px  black;
+    color: black;
+    padding: .7em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0 10px;
+  }
+  
+  .member a:hover {
+    background-color: #215353;
+    color: #FEFCED;
+    cursor: pointer;
+  }
+  
+  .member a:active {
+    box-shadow: none;
+    top: 5px;
+  }
+  
+.intro p {
+    padding: 10px 50px;
+}
+
+
+.weatherSumm .stats h3 {
+	color: #1E4F89;
+	font-family: Lato, sans-serif;
+	font-size: 1.5rem;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+}
+
+
+.stats {
+	color: #FEFCFD;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+	text-align: left;
+	margin: 0 20px;
+}
+
+
+
+/*-------Local Business Info------*/
+
+.localbusiness {
+    background-color: #d3d3d3;
+    padding: 35px;
+}
+
+
+.localbusiness p {
+    padding: 10px 50px;
+}
+
+.localbusiness a {
+    background-color: #96a74e;
+    box-shadow: 2px 2px  black;
+    color: black;
+    padding: .7em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 0 10px 50px;
+    border-radius: 10px 10px 0 10px;
+  }
+  
+  .localbusiness a:hover {
+    background-color: #215353;
+    color: #FEFCED;
+    cursor: pointer;
+  }
+  
+  .localbusiness a:active {
+    box-shadow: none;
+    top: 5px;
+  }
+
+.business {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: .8rem;
+    padding: 15px;
+    margin: 30px auto;
+    background-color: #d3d3d3;
+}
+
+.business article {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+    /*border:  1px solid navy;
+    background-color: #EAF3FA;*/
+	background-color: #215353;
+    padding: 1rem;
+	margin: 5px auto ;
+}
+
+.business h2 {
+    /*color:navy;*/ 
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+	color: #FEFCFD;
+	font-size: 2rem;
+	margin-bottom: 25px;
+    line-height: 2.5rem;
+}
+
+.business h3 {
+	color: #FEFCFD;
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+	font-size: .9rem;
+	
+}
+
+.business img {
+    /*box-shadow: 10px 10px 10px gray;*/
+    width: 100%;
+	display: block;
+	margin: auto;
+	box-sizing: border-box;
+	
+}
+
+.business p {
+    line-height: 1.5rem;
+	color: #FEFCFD;
+}
+
+/*-----Upcoming Events List----*/
+
+
+
+.events li {
+    list-style-type: none;
+}
+
+
+.contact {
+    background-color: #96a74e;
+    color: black;
+    padding: 20px;
+    text-align: center; 
+    
+}
+
+.socialIcon {
+    width: 75px;
+}
+
+/*---Weather---*/
+
+.weather {
+    display: block;
+    /*grid-template-columns: 1fr 3fr;*/
+    background-color: #215353;
+    color: #FEFCFD;
+    padding: 10px 25px;
+    /*width:*/
+}
+
+.weather h3 {
+    text-align: center;
+}
+.weather p {
+    line-height: 10px;
+}
+
+table {
+	width: 75%;
+	margin: 20px auto;
+	border-collapse: collapse;
+	padding: 1rem;
+}
+
+td, th {
+	/*border: 1px solid #dddddd;*/
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+	text-align: center;
+  }
+  
+td {color: #FEFCFD;}
+
+
+/*tr:nth-child(odd) {
+	background-color: #ffffff;
+  }*/ 
+
+ 
+  /*------Footer-------*/
+
+  footer {
+	padding: 35px;
+    background-color: #3B7C69;
+}
+
+footer, footer a {
+	color: white;
+	text-align: center;
+	/*margin-top: 30px;*/
+}
+
+/*-----------City Page--------------*/
+
+.city {
+    display: block;
+    width: 100%;
+}
+
+.demographics {
+    background-color: #215353;
+    max-width: 90%;
+    margin: 0;
+    color: #FEFCFD;
+    padding: 20px;
+    line-height: 2em;
+}
+
+.demographics h2 {
+    font-size: 1.5rem;
+}
+
+
+.demographics ul {
+    width: 75%;
+    font-size: 1rem;
+}
+
+.currentEvents {
+    margin: 20px 0px;
+}
+
+#eventsImg {
+	width: 90%;
+	margin: 20px;
+    box-shadow: 0 0 30px #111;
+}
+
+.events {
+    padding: 20px;
+}
+
+.upcomingEvents {
+    background-color: #e7e7e7;
+    text-align: center;
+    margin: 25px 0px;
+    padding: 20px 0;
+}
+
+
+
+/*------Join Page Form------*/
+
+.memberBenefits {
+    padding: 1rem;
+}
+
+
+.article {
+	position: relative;
+	margin: 30px 0px;
+	padding: 20px 30px;
+	/*border: 1px solid #ccc;*/
+	/*background-color: ;*/
+}  
+
+#articleImg {
+	max-width: 90%;
+	margin: 20px;
+	box-shadow: 0 0 30px #111;
+}
+
+.levels {
+    font-size: .75em;
+}
+
+
+/*-----------FORM----------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #1E4F89;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #1E4F89;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #1E4F89;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(255, 255, 255);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+form input.submitBtn {
+    background-color: #96a74e;
+    box-shadow: 1px 1px  black;
+    color: black;
+    padding: .7em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 1rem 0 2rem 2%;
+    border-radius: 10px 10px 0 10px;
+    width: 96%;
+    max-width: 20rem;
+	transition-duration: 0.4s;
+
+    /*border: none;
+    background-color: #90A338;
+    color: white;
+    border-radius: 10px 10px 0 10px;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+	transition-duration: 0.4s;*/
+}
+
+form input.submitBtn:hover {
+	background-color: #215353;
+	color: white; 
+	/*border: 2px solid #f0b52a;*/
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+/*----------------Directory Page--------------*/
+
+.buttons {
+    display: none;
+}
+
+.cards {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: .8rem;
+    padding: 15px;
+    margin: 30px auto;
+    
+}
+
+.cards article {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+    /*border:  1px solid navy;
+    background-color: #EAF3FA;*/
+	background-color: #96a74e;
+    padding: 1rem;
+	margin: 5px auto ;
+}
+
+.cards h2 {
+    /*color:navy; 
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;*/
+	color: black;
+	font-size: 2rem;
+	margin-bottom: 25px;
+
+}
+
+.cards h3 {
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: .9rem;
+	
+}
+
+.cards img {
+    /*box-shadow: 10px 10px 10px gray;*/
+    width: 50%;
+	display: block;
+	margin: auto;
+	box-sizing: border-box;
+	
+}
+
+.cards p {
+    line-height: 1.5rem;
+	color: black;
+}
+
+
+/*-----------Contact Page Form-----------*/
+
+.contactUs {
+    /*background-color: #A9A8A9;*/
+    background-color: #d3d3d3;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.contactUs h2 {
+    background-color:#96a74e;
+    color: black;
+    width: 100%;
+    padding: 25px 0px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.contactUs p {
+    padding: 10px 30px;
+}
+
+.contactForm {
+    width: 75%;
+    margin: 0 auto;
+    
+}
+
+.contactUs form {
+    margin: 30px;
+}
+
+.chamberContact {
+    background-color: #215353;
+    color: #FEFCFD;
+    text-align: center;
+    padding: 25px;
+
+}
+
+.map {
+    display: none;
+}
+
+.boardDirectors h2, h3 {
+    text-align: center;
+}
+
+.boardDirectors figure {
+    background-color: #d3d3d3;
+    text-align: center;
+    font-size: .8rem;
+    padding: 15px;
+    filter: drop-shadow(0 0 15px #333);
+    max-width: 1290px;
+    margin: 30px auto;
+}
+
